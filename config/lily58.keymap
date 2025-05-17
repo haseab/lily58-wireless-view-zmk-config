@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &kp MINUS  &kp EQUAL
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11    &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp APOS
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC   &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&kp ESCAPE        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &bt BT_CLR  &kp MINUS  &kp EQUAL
+&kp TAB           &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10     &kp F11    &kp F12
+&kp LEFT_SHIFT    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR    &kp RPAR   &kp APOS
+&kp LEFT_CONTROL  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC    &kp RBRC   &kp PIPE
+                                              &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,17 +62,20 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans          &trans          &trans           &trans           &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans          &kp UP          &kp UP_ARROW     &kp UP           &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RBKT   &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
+&kp ESC           &trans  &trans  &trans   &trans   &trans                     &trans          &trans          &trans           &trans           &trans     &trans
+&kp TAB           &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &trans
+&kp LEFT_SHIFT    &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans          &kp UP          &kp UP_ARROW     &kp UP           &kp RIGHT  &trans
+&kp LEFT_CONTROL  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RBKT   &kp RIGHT_SHIFT
+                                  &trans   &trans   &trans   &trans    &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        extra_1 { status = "reserved"; };
+        extra_1 {
+            status = "reserved";
+            sensor-bindings = <&inc_dec_kp 0 0>;
+        };
 
         extra_2 { status = "reserved"; };
 
