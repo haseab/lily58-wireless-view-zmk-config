@@ -62,11 +62,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB           &trans  &trans  &trans   &trans   &trans                            &trans             &trans          &trans           &trans           &trans     &trans
-&kp F1            &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                            &kp F7             &kp F8          &kp F9           &kp F10          &kp F11    &kp F12
-&kp CAPSLOCK      &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                            &trans             &kp UP          &kp UP_ARROW     &kp UP           &kp RIGHT  &trans
-&kp LEFT_CONTROL  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &kp BACKSLASH  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RBKT   &kp RIGHT_SHIFT
-                                  &trans   &trans   &trans   &trans    &kp SPACE      &kp RIGHT_COMMAND  &kp RIGHT_ALT   &trans
+&kp TAB           &trans  &trans  &trans   &trans   &trans                            &trans          &trans             &trans           &trans           &trans     &trans
+&kp F1            &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                            &kp F7          &kp F8             &kp F9           &kp F10          &kp F11    &kp F12
+&kp CAPSLOCK      &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                            &trans          &kp UP             &kp UP_ARROW     &kp UP           &kp RIGHT  &trans
+&kp LEFT_CONTROL  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &kp BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RBKT   &kp RIGHT_SHIFT
+                                  &trans   &trans   &trans   &trans    &kp SPACE      &kp RIGHT_ALT   &kp RIGHT_COMMAND  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
